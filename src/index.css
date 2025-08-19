@@ -1,0 +1,85 @@
+html {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    padding: auto 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.5)), url('/fortune-cookies.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #2c3e50;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #e3b10a;
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.fortune-button {
+    background: linear-gradient(135deg, #d4af37, #f4e4bc);
+    border: none;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(212, 175, 55, 0.3);
+    margin: 20px 0;
+}
+
+.fortune-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(212, 175, 55, 0.4);
+    background: linear-gradient(#f4e4bc, #d4af37);
+}
+
+.fortune-button:active {
+    transform: translateY(0);
+}
+
+.fortune-display {
+    background: rgba(255, 255, 255, 0.95);
+    border: 3px solid #d4af37;
+    border-radius: 20px;
+    padding: 30px;
+    margin-top: 20px;
+    max-width: 700px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+}
+
+.fortune-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    color: #2c3e50;
+    margin: 0;
+    font-weight: 500;
+}
+
+.fortune-text::before {
+    content: '"';
+    font-size: 2rem;
+    color: #d4af37;
+}
+
+.fortune-text::after {
+    content: '"';
+    font-size: 2rem;
+    color: #d4af37;
+}
