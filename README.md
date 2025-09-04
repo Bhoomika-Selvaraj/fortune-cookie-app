@@ -1,1 +1,1 @@
-### Fortune cookie app built with react
+### Fortune cookie app
